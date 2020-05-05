@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Libre+Baskerville:wght@700&display=swap');
+@font-face 
+{ 	font-family: "Baskerval"; 	
+	src: url('Baskerval.otf'); 
+}
+@font-face 
+{ 	font-family: "Devonshire"; 	
+	src: url('Devonshire.ttf'); 
+}
+@font-face 
+{ 	font-family: "Kaushanscript"; 	
+	src: url('Kaushanscript.ttf'); 
+}
+@font-face 
+{ 	font-family: "Riotsquad"; 	
+	src: url('Riotsquad.ttf'); 
+}
+@font-face 
+{ 	font-family: "SinkinSans500"; 	
+	src: url('SinkinSans500.otf'); 
+}
+@font-face 
+{ 	font-family: "SinkinSans700"; 	
+	src: url('SinkinSans700.otf'); 
+}
+
+*
+{
+	margin:0;
+	padding:0;
+}
+header, footer
+{
+	width:100%;
+	background-color:#579C87;
+}
+
+header
+{
+	height:15%;
+	font-family: 'SinkinSans700', sans-serif;
+	text-align:center;
+	font-size:1.2em;
+	padding-top:15px;
+}
+
+footer
+{
+	position:fixed;
+	bottom:0;
+	display:flex;
+	justify-content:space-around;
+	height:7%;
+	padding-top:10px;
+}
+
+footer, #btn
+{
+	font-family: 'SinkinSans500', sans-serif;
+	font-size:1em;
+}
+
+a
+{
+	text-decoration:none;
+}
+
+header a, footer a
+{
+	color:#FCCA44;
+}
+
+h2
+{
+	font-size:2em;
+}
+
+#contenu
+{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	margin:10%;
+}
+
+
+.vignette
+{
+	width:190px;
+	height:270px;
+	box-shadow: 0px 0px 5px 4px #F1EDF1;
+	text-align:center;
+	line-height:250%;
+}
+
+.zoom:hover
+{
+	transform:scale(1.1)
+}
+
+.grand
+{
+	width:80%;
+	box-shadow: 0px 0px 5px 4px #F1EDF1;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+	margin-bottom:100px;
+	padding-top:40px;
+}
+
+#menu1
+{
+	background-color:#FCDFDB;
+	font-family: 'Kalam', cursive;
+	color:#3C1218;
+}
+
+.police1, .degrade1
+{
+	font-family: 'Devonshire', sans-serif;
+}
+
+.degrade1
+{
+	background-image: linear-gradient(to right, #F15861, #F8A183);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+#menu2, #menu2bis
+{
+	background-color:#FFF5FE;
+	font-family: 'Libre Baskerville', serif;
+}
+
+#menu2
+{
+	color:#C77412;
+}
+
+.degrade2
+{
+	font-family: 'Riotsquad', sans-serif;
+	background-image: linear-gradient(to bottom right, #E38A12, #905BFD);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+#menu3, #menu3bis
+{
+	background-color:#F9F9F9;
+	font-family: 'Kalam', cursive;
+}
+
+#menu3
+{
+	color:#0887FB;
+}
+
+.degrade3
+{
+	font-family: 'Baskerval', sans-serif;
+	background-image: linear-gradient(to right, #0431DF, #0887FB);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+#menu4, #menu4bis
+{
+	background-color:#FDFFFC;
+	font-family: 'Kalam', cursive;
+}
+
+#menu4
+{
+	color:#72BF56;
+}
+
+.degrade4
+{
+	font-family: 'Kaushanscript', sans-serif;
+	background-image: linear-gradient(to right, #42973C, #BFFF7E);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+#btn
+{
+	height:30px;
+	width:200px;
+	background-color:#579C87;
+	border-radius:12px/10px;
+	padding-top:5px;
+	margin-bottom:70px;
+	margin-left:auto;
+	margin-right:auto;
+	color:#FCCA44;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+.bounce1
+{
+	animation:rebon 1s ease-in-out infinite;
+}
+
+.bounce2
+{
+	animation:rebon 1s ease-in-out infinite 0.2s;
+}
+
+.bounce3
+{
+	animation:rebon 1s ease-in-out infinite 0.4s;
+}
+
+@keyframes rebon
+{
+	from {transform: translateY(0);}
+	50% {transform: translateY(-4px);}
+	to {transform: translateY(0);}
+}
+
+table
+{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
