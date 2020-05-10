@@ -78,7 +78,7 @@ a
 	color:black;
 }
 
-header a, footer a, #contenu a
+header a, footer a, .contenu a
 {
 	color:#FCCA44;
 	text-decoration:none;
