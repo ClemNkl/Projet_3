@@ -1,3 +1,10 @@
+/*CSS Document*/
+*{
+	margin:0;
+	padding:0;
+}
+
+/*Polices*/
 @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Libre+Baskerville:wght@700&display=swap');
 @font-face 
 { 	font-family: "Baskerval"; 	
@@ -23,21 +30,14 @@
 { 	font-family: "SinkinSans700"; 	
 	src: url('../polices/SinkinSans700.otf'); 
 }
+/*Polices*/
 
-*
-{
-	margin:0;
-	padding:0;
-}
-
-header, footer
-{
+header, footer{
 	width:100%;
 	background-color:#579C87;
 }
 
-header
-{
+header{
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -46,8 +46,7 @@ header
 	height:70px;
 }
 
-footer
-{
+footer{
 	height:40px;
 	position:fixed;
 	bottom:0;
@@ -56,51 +55,45 @@ footer
 	align-items: center;
 }
 
-footer, #btn
-{
+footer, #btn{
 	font-family: 'SinkinSans500', sans-serif;
 	font-size:1em;
 }
 
-.footer_mouv:hover
-{
+/*Animation liens footer*/
+.footer_mouv:hover{
 	animation: wiggle 0.3s infinite;
 }
 
-@keyframes wiggle
-{ 
+@keyframes wiggle{ 
 	50% {transform: translateX(4px);}
 	to {transform: translateX(-4px);}
 }
+/*Animation liens footer*/
 
-a
-{
+a{
 	color:black;
 }
 
-header a, footer a, .contenu a
-{
+header a, footer a, .contenu a{
 	color:#FCCA44;
 	text-decoration:none;
 }
 
-h2
-{
+h2{
 	font-size:2em;
 	text-align:center;
 }
 
-.contenu
-{
+/*Page d'accueil*/
+.contenu{
 	width:100%;
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
 }
 
-
-.vignette
-{
+.vignette{
 	width:250px;
 	height:350px;
 	margin: 50px;
@@ -113,217 +106,18 @@ h2
 	align-items:center;
 }
 
-.zoom
-{
+/*Animation menus de la page d'accueil*/
+.zoom{
 	transition: all 0.5s;
 }
 
-.zoom:hover
-{
+.zoom:hover{
 	transform:scale(1.2);
 	opacity: 0.7;
 }
+/*Animation menus de la page d'accueil*/
 
-.grand
-{
-	width:80%;
-	box-shadow: 0px 0px 5px 4px #F1EDF1;
-	text-align:center;
-	line-height:40px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:50px;
-	margin-bottom:100px;
-	padding-top:40px;
-	padding-bottom:50px;
-}
-
-#menu1
-{
-	background-color:#FCDFDB;
-	font-family: 'Kalam', cursive;
-	color:#3D1319;
-}
-
-.police1, .degrade1, .police1bis
-{
-	font-family: 'Devonshire', sans-serif;
-}
-
-.police1bis
-{
-	font-size:1.5em;
-	padding-left:15px;
-}
-
-.degrade1
-{
-	background-image: linear-gradient(to right, #F15861, #F8A183);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
-}
-
-.couleur_menu1
-{
-	background-color:#3D1319;
-}
-
-.imgmini
-{
-	width:30px;
-}
-
-.bas_menu1
-{
-	margin-top:40px;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-}
-
-#menu2, #menu2bis
-{
-	background-color:#FFF5FE;
-	font-family: 'Libre Baskerville', serif;
-}
-
-#menu2
-{
-	color:#C77412;
-	font-size:1em;
-}
-
-#menu2bis
-{
-	font-size:0.8em;
-}
-
-.degrade2
-{
-	font-family: 'Riotsquad', sans-serif;
-	background-image: linear-gradient(to bottom right, #E38A12 20%, #915DFE 80%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
-}
-
-.couleur_menu2_1
-{
-	background-color:#C67412;
-}
-
-.police_couleur_menu2_1
-{
-	color:#C67412;
-}
-
-.couleur_menu2_2
-{
-	background-color:#A56799;
-}
-
-.police_couleur_menu2_2
-{
-	color:#A56799;
-}
-
-.couleur_menu2_3
-{
-	background-color:#9276D9;
-}
-
-.police_couleur_menu2_3
-{
-	color:#9276D9;
-}
-
-#menu3, #menu3bis
-{
-	background-color:#F9F9F9;
-	font-family: 'Kalam', cursive;
-}
-
-#menu3
-{
-	color:#0887FB;
-}
-
-.degrade3
-{
-	font-family: 'Baskerval', sans-serif;
-	background-image: linear-gradient(to right, #0431DF, #0887FB);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
-}
-
-.couleur_menu3_1
-{
-	background-color:#0228DD;
-}
-
-.couleur_menu3_2
-{
-	background-color:#0670F3;
-}
-
-.couleur_menu3_3
-{
-	background-color:#229DF9;
-}
-
-#menu4, #menu4bis
-{
-	background-color:#FDFFFC;
-	font-family: 'Kalam', cursive;
-}
-
-#menu4
-{
-	color:#72BF56;
-}
-
-.degrade4
-{
-	font-family: 'Kaushanscript', sans-serif;
-	background-image: linear-gradient(to right, #42973C, #BFFF7E);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
-}
-
-.degrade4_2
-{
-	background-image: linear-gradient(to right, #42973C, #BFFF7E);
-}
-
-.degrade4_2bis
-{
-	background-image: linear-gradient(to left, #42973C, #BFFF7E);
-}
-
-.couleur_menu4_1
-{
-	background-color:#41963C;
-}
-
-.couleur_menu4_2
-{
-	background-color:#7DC85D;
-}
-
-.couleur_menu4_3
-{
-	background-color:#B4F679;
-}
-
-#btn
-{
+#btn{
 	height:30px;
 	width:200px;
 	background-color:#579C87;
@@ -338,29 +132,41 @@ h2
 	justify-content:center;
 }
 
-.bounce1
-{
+/*Animation bouton Prochainement*/
+.bounce1{
 	animation:rebon 1s ease-in-out infinite;
 }
 
-.bounce2
-{
+.bounce2{
 	animation:rebon 1s ease-in-out infinite 0.2s;
 }
 
-.bounce3
-{
+.bounce3{
 	animation:rebon 1s ease-in-out infinite 0.4s;
 }
 
-@keyframes rebon
-{
+@keyframes rebon{
 	50% {transform: translateY(-4px);}
 	to {transform: translateY(0);}
 }
+/*Animation bouton Prochainement*/
+/*Page d'accueil*/
 
-table
-{
+/*Pages menus*/
+.grand{
+	width:80%;
+	box-shadow: 0px 0px 5px 4px #F1EDF1;
+	text-align:center;
+	line-height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+	margin-bottom:100px;
+	padding-top:40px;
+	padding-bottom:50px;
+}
+
+table{
 	width:90%;
 	text-align:left;
 	line-height:20px;
@@ -369,20 +175,16 @@ table
 	margin-right:5%;
 }
 
-tr
-{
+tr{
 	height: 40px;
 }
 
-
-.cell_prix
-{
+.cell_prix{
 	width:100px;
 	text-align:right;
 }
 
-.souspartie
-{
+.souspartie{
 	display:flex;
 	justify-content: space-between;
 	align-items:center;
@@ -390,49 +192,207 @@ tr
 	margin-right:5%;
 }
 
-.souspartie span
-{
+.souspartie span{
 	font-size:1.2em;
 }
 
-.trait
-{
+.trait{
 	width:30%;
 	height: 4px;
 }
 
-.anim
-{
+/*Page menu 1*/
+#menu1{
+	background-color:#FCDFDB;
+	font-family: 'Kalam', cursive;
+	color:#3D1319;
+}
+
+.police1, .degrade1, .police1bis{
+	font-family: 'Devonshire', sans-serif;
+}
+
+.police1bis{
+	font-size:1.5em;
+	padding-left:15px;
+}
+
+.degrade1{
+	background-image: linear-gradient(to right, #F15861, #F8A183);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+.couleur_menu1{
+	background-color:#3D1319;
+}
+
+.imgmini{
+	width:30px;
+}
+
+.bas_menu1{
+	margin-top:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+/*Page menu 1*/
+
+/*Page menu 2*/
+#menu2, #menu2bis{
+	background-color:#FFF5FE;
+	font-family: 'Libre Baskerville', serif;
+}
+
+#menu2{
+	color:#C77412;
+	font-size:1em;
+}
+
+#menu2bis{
+	font-size:0.8em;
+}
+
+.degrade2{
+	font-family: 'Riotsquad', sans-serif;
+	background-image: linear-gradient(to bottom right, #E38A12 20%, #915DFE 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+.couleur_menu2_1{
+	background-color:#C67412;
+}
+
+.police_couleur_menu2_1{
+	color:#C67412;
+}
+
+.couleur_menu2_2{
+	background-color:#A56799;
+}
+
+.police_couleur_menu2_2{
+	color:#A56799;
+}
+
+.couleur_menu2_3{
+	background-color:#9276D9;
+}
+
+.police_couleur_menu2_3{
+	color:#9276D9;
+}
+/*Page menu 2*/
+
+/*Page menu 3*/
+#menu3, #menu3bis{
+	background-color:#F9F9F9;
+	font-family: 'Kalam', cursive;
+}
+
+#menu3{
+	color:#0887FB;
+}
+
+.degrade3{
+	font-family: 'Baskerval', sans-serif;
+	background-image: linear-gradient(to right, #0431DF, #0887FB);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+.couleur_menu3_1{
+	background-color:#0228DD;
+}
+
+.couleur_menu3_2{
+	background-color:#0670F3;
+}
+
+.couleur_menu3_3{
+	background-color:#229DF9;
+}
+/*Page menu 3*/
+
+/*Page menu 4*/
+#menu4, #menu4bis{
+	background-color:#FDFFFC;
+	font-family: 'Kalam', cursive;
+}
+
+#menu4{
+	color:#72BF56;
+}
+
+.degrade4{
+	font-family: 'Kaushanscript', sans-serif;
+	background-image: linear-gradient(to right, #42973C, #BFFF7E);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+.degrade4_2{
+	background-image: linear-gradient(to right, #42973C, #BFFF7E);
+}
+
+.degrade4_2bis{
+	background-image: linear-gradient(to left, #42973C, #BFFF7E);
+}
+
+.couleur_menu4_1{
+	background-color:#41963C;
+}
+
+.couleur_menu4_2{
+	background-color:#7DC85D;
+}
+
+.couleur_menu4_3{
+	background-color:#B4F679;
+}
+/*Page menu 4*/
+
+/*Animation titres menus*/
+.anim{
 	padding-left: 5px;
 	padding-right:5px;
 }
 
-.souligne_anim
-{
+.souligne_anim{
 	width:0%;
 	height:2px;
 }
 
-.anim:hover + .souligne_anim
-{
+.anim:hover + .souligne_anim{
 	animation: grandir 2s ease-out 0.2s;
 	animation-fill-mode: forwards;
 }
 
-@keyframes grandir
-{
+@keyframes grandir{
 	to {width:100%;}
 	from {width: 0%;}
 }
+/*Animation titres menus*/
+/*Pages menus*/
 
-.mentionsl
-{
+/*Page Mentions légales*/
+.mentionsl{
 	margin:20px;
 	text-align:justify;
 	padding-bottom:50px;
 }
 
-.centre
-{
+.centre{
 	text-align:center;
 }
+/*Page Mentions légales*/
